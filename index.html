@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+       <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <a class="sidebar" href="./index.html">
+                <svg class="sidebar-svg" width="37" height="37">
+                    <use href="./images/icons.svg#icon-setting"></use>
+                </svg>                               
+                Dashboard
+                <span class="sidebar-accent">v.01</span>
+            </a>
+
+            <ul class="sidebar__menu">
+                <li class="sidebar__menu-item">
+                    <svg class="sidebar__menu-item-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-key-square"></use>
+                    </svg>
+                    Dashboard
+                </li>
+                
+                <li class="sidebar__menu-item">
+                    <svg class="sidebar__menu-item-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-d-square"></use>
+                    </svg>
+                    Product
+                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                    </svg>
+                </li>
+
+                <li class="sidebar__menu-item">
+                    <svg class="sidebar__menu-item-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-user-square"></use>
+                    </svg>
+                    Customers
+                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                    </svg>
+                </li>
+
+                <li class="sidebar__menu-item">
+                    <svg class="sidebar__menu-item-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-wallet-money"></use>
+                    </svg>
+                    Income
+                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                    </svg>
+                </li>
+
+                <li class="sidebar__menu-item">
+                    <svg class="sidebar__menu-item-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-discount-shape"></use>
+                    </svg>
+                    Promote
+                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                    </svg>
+                </li>
+
+                <li class="sidebar__menu-item">
+                    <svg class="sidebar__menu-item-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-message-question"></use>
+                    </svg>
+                    Help
+                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                        <use href="./images/icons.svg#icon-chevron-right"></use>
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar__footer">
+            <img src="./images/Ellipse.jpg" alt="Project Manager Evano">
+            <span class="sidebar__footer-text">Evano</span>
+            <span class="sidebar__footer-role">Project Manager</span>
+        </div>
+    </aside>
+
+    <main class="main-content">
+          <h1 class="main-content__title">Hello Evano 👋🏼,</h1>
+
+          <section class="customers">
+            <div class="customers__header">
+              <h2 class="customers__header-title">All Customers</h2>
+              <a href="#" class="customers__header-link">Active Members</a>
+              <div class="customers__header-input-wrapper">
+                <svg class="customers__header-input-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+                <input class="customers__header-input" type="text" placeholder="Search" />
+              </div>
+              
+              
+             
+            </div>
+
+            <table class="customers__table">
+                <thead>
+                    <tr>
+                      <th>Customer Name</th>
+                      <th>Company</th>
+                      <th>Phone Number</th>
+                      <th>Email</th>
+                      <th>Country</th>
+                      <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jane Cooper</td>
+                    <td>Microsoft</td>
+                    <td>(225) 555-0118</td>
+                    <td>jane@microsoft.com</td>
+                    <td>United States</td>
+                    <td><span class="status status--active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Floyd Miles</td>
+                    <td>Yahoo</td>
+                    <td>(205) 555-0100</td>
+                    <td>floyd@yahoo.com</td>
+                    <td>Kiribati</td>
+                    <td><span class="status status--inactive">Inactive</span></td>
+                  </tr>
+                  <tr>
+                    <td>Ronald Richards</td>
+                    <td>Adobe</td>
+                    <td>(302) 555-0107</td>
+                    <td>ronald@adobe.com</td>
+                    <td>Israel</td>
+                    <td><span class="status status--inactive">Inactive</span></td>
+                  </tr>
+                  <tr>
+                    <td>Marvin McKinney</td>
+                    <td>Tesla</td>
+                    <td>(252) 555-0126</td>
+                    <td>marvin@tesla.com</td>
+                    <td>Iran</td>
+                    <td><span class="status status--active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Jerome Bell</td>
+                    <td>Google</td>
+                    <td>(629) 555-0129</td>
+                    <td>jerome@google.com</td>
+                    <td>Réunion</td>
+                    <td><span class="status status--active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Kathryn Murphy</td>
+                    <td>Microsoft</td>
+                    <td>(406) 555-0120</td>
+                    <td>kathryn@microsoft.com</td>
+                    <td>Curaçao</td>
+                    <td><span class="status status--active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Jacob Jones</td>
+                    <td>Yahoo</td>
+                    <td>(208) 555-0112</td>
+                    <td>jacob@yahoo.com</td>
+                    <td>Brazil</td>
+                    <td><span class="status status--active">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>Kristin Watson</td>
+                    <td>Facebook</td>
+                    <td>(704) 555-0127</td>
+                    <td>kristin@facebook.com</td>
+                    <td>Åland Islands</td>
+                    <td><span class="status status--active">Inactive</span></td>
+                  </tr>
+                    
+                </tbody>
+              </table>
+
+              <div class="customers__pagination">
+                <span>Showing data 1 to 8 of 256k entries</span>
+                <nav class="pagination">
+                    <a href="#" class="pagination__link">1</a>
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <span>...</span>
+                    <a href="#" class="pagination__link">40</a>
+                </nav>
+              </div>
+        </section>
+    </main>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
