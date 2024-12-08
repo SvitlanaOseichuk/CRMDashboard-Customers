@@ -4,90 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>CRM Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="dashboard-container">
        <!-- Sidebar -->
-        <aside class="sidebar">
+      <aside class="sidebar">
 
-            <a class="sidebar" href="./index.html">
-                <svg class="sidebar-svg" width="37" height="37">
-                    <use href="./images/icons.svg#icon-setting"></use>
-                </svg>                               
+        <a class="sidebar__logo" href="./index.html">
+            <svg class="sidebar__logo-svg" width="37" height="37">
+                <use href="./images/icons.svg#icon-setting"></use>
+            </svg>                               
+            Dashboard
+            <span class="sidebar__logo-accent">v.01</span>
+        </a>
+
+        <ul class="sidebar__menu">
+            <li class="sidebar__menu-item">
+                <svg class="sidebar__menu-item-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-key-square"></use>
+                </svg>
                 Dashboard
-                <span class="sidebar-accent">v.01</span>
-            </a>
+                <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                  <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
+            
+            <li class="sidebar__menu-item">
+                <svg class="sidebar__menu-item-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-d-square"></use>
+                </svg>
+                Product
+                <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
 
-            <ul class="sidebar__menu">
-                <li class="sidebar__menu-item">
-                    <svg class="sidebar__menu-item-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-key-square"></use>
-                    </svg>
-                    Dashboard
-                </li>
-                
-                <li class="sidebar__menu-item">
-                    <svg class="sidebar__menu-item-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-d-square"></use>
-                    </svg>
-                    Product
-                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
-                        <use href="./images/icons.svg#icon-chevron-right"></use>
-                    </svg>
-                </li>
+            <li class="sidebar__menu-item">
+                <svg class="sidebar__menu-item-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-user-square"></use>
+                </svg>
+                Customers
+                <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
 
-                <li class="sidebar__menu-item">
-                    <svg class="sidebar__menu-item-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-user-square"></use>
-                    </svg>
-                    Customers
-                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
-                        <use href="./images/icons.svg#icon-chevron-right"></use>
-                    </svg>
-                </li>
+            <li class="sidebar__menu-item">
+                <svg class="sidebar__menu-item-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-wallet-money"></use>
+                </svg>
+                Income
+                <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
 
-                <li class="sidebar__menu-item">
-                    <svg class="sidebar__menu-item-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-wallet-money"></use>
-                    </svg>
-                    Income
-                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
-                        <use href="./images/icons.svg#icon-chevron-right"></use>
-                    </svg>
-                </li>
+            <li class="sidebar__menu-item">
+                <svg class="sidebar__menu-item-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-discount-shape"></use>
+                </svg>
+                Promote
+                <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
 
-                <li class="sidebar__menu-item">
-                    <svg class="sidebar__menu-item-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-discount-shape"></use>
-                    </svg>
-                    Promote
-                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
-                        <use href="./images/icons.svg#icon-chevron-right"></use>
-                    </svg>
-                </li>
+            <li class="sidebar__menu-item">
+                <svg class="sidebar__menu-item-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-message-question"></use>
+                </svg>
+                Help
+                <svg class="sidebar__menu-item-svg-right" width="16" height="16">
+                    <use href="./images/icons.svg#icon-chevron-right"></use>
+                </svg>
+            </li>
+        </ul>
 
-                <li class="sidebar__menu-item">
-                    <svg class="sidebar__menu-item-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-message-question"></use>
-                    </svg>
-                    Help
-                    <svg class="sidebar__menu-item-svg-right" width="16" height="16">
-                        <use href="./images/icons.svg#icon-chevron-right"></use>
-                    </svg>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="sidebar__footer">
-            <img src="./images/Ellipse.jpg" alt="Project Manager Evano">
-            <span class="sidebar__footer-text">Evano</span>
-            <span class="sidebar__footer-role">Project Manager</span>
+        <div class="sidebar__bottom">
+            <img 
+              class="sidebar__bottom-img"
+              srcset="./images/Ellipse.jpg 1x, ./images/Ellipse@2x.jpg 2x"
+              src="./images/Ellipse.jpg" 
+              alt="Project Manager Evano">
+            <div class="sidebar__bottom-text"> 
+              <span class="sidebar__bottom-name">Evano</span>
+              <span class="sidebar__bottom-role">Project Manager</span>
+            </div>
         </div>
-    </aside>
+      </aside>
 
     <main class="main-content">
+      <div class="sidebar__menu-mobile">
+        <button class="hamburger-menu sidebar__toggle" aria-label="Toggle sidebar">
+          <span class="sidebar__toggle-bar"></span>
+          <span class="sidebar__toggle-bar"></span>
+          <span class="sidebar__toggle-bar"></span>
+        </button>
+
+        <!-- <a class="sidebar__logo" href="./index.html">
+          <svg class="sidebar__logo-svg" width="37" height="37">
+              <use href="./images/icons.svg#icon-setting"></use>
+          </svg>                               
+          Dashboard
+          <span class="sidebar__logo-accent">v.01</span>
+        </a> -->
+      </div>
           <h1 class="main-content__title">Hello Evano 👋🏼,</h1>
 
           <section class="customers">
@@ -95,14 +119,11 @@
               <h2 class="customers__header-title">All Customers</h2>
               <a href="#" class="customers__header-link">Active Members</a>
               <div class="customers__header-input-wrapper">
-                <svg class="customers__header-input-svg" width="16" height="16">
+                <svg class="customers__header-input-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-search"></use>
                 </svg>
                 <input class="customers__header-input" type="text" placeholder="Search" />
               </div>
-              
-              
-             
             </div>
 
             <table class="customers__table">
@@ -179,25 +200,27 @@
                     <td>(704) 555-0127</td>
                     <td>kristin@facebook.com</td>
                     <td>Åland Islands</td>
-                    <td><span class="status status--active">Inactive</span></td>
+                    <td><span class="status status--active">Inactive</button></td>
                   </tr>
-                    
                 </tbody>
               </table>
 
               <div class="customers__pagination">
                 <span>Showing data 1 to 8 of 256k entries</span>
                 <nav class="pagination">
+                  <button class="pagination__link">&lt;</button>
                     <a href="#" class="pagination__link">1</a>
                     <a href="#" class="pagination__link">2</a>
                     <a href="#" class="pagination__link">3</a>
-                    <span>...</span>
+                    <a href="#" class="pagination__link">4</a>
+                    <span class="pagination__link-middle">...</span>
                     <a href="#" class="pagination__link">40</a>
+                    <button class="pagination__link">&gt;</button>
                 </nav>
               </div>
         </section>
     </main>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script> 
 </body>
 </html>
